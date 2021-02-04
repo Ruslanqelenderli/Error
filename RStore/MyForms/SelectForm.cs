@@ -19,8 +19,14 @@ namespace RStore.MyForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            UserForm userForm = new UserForm();
+            ProductUserForm userForm = new ProductUserForm();
             userForm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AllProductsForm allProductsForm = new AllProductsForm();
+            allProductsForm.ShowDialog();
         }
     }
 }

@@ -15,5 +15,7 @@ namespace RStore.Models
         public int CategoryId  { get; set; }
         public  string Status { get; set; }
         public int Count { get; set; }
+        public int BoughtCount { get; set; }
+
     }
 }

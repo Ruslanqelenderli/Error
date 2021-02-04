@@ -1,6 +1,6 @@
 ﻿namespace RStore.MyForms
 {
-    partial class UserForm
+    partial class ProductUserForm
     {
         /// <summary>
         /// Required designer variable.
@@ -59,7 +59,7 @@
             this.lbl_CategoryAdd = new System.Windows.Forms.Label();
             this.lbl_CategoryUpdate = new System.Windows.Forms.Label();
             this.lbl_CategorySearch = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_AllProducts = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UserProducts)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,7 +128,7 @@
             this.dgv_UserProducts.Name = "dgv_UserProducts";
             this.dgv_UserProducts.Size = new System.Drawing.Size(477, 260);
             this.dgv_UserProducts.TabIndex = 7;
-            this.dgv_UserProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_UserProducts_CellClick);
+           
             // 
             // lbl_Add
             // 
@@ -321,22 +321,22 @@
             this.lbl_CategorySearch.TabIndex = 34;
             this.lbl_CategorySearch.Text = "Category";
             // 
-            // button1
+            // btn_AllProducts
             // 
-            this.button1.Location = new System.Drawing.Point(249, 278);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 23);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Show All Product";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_AllProducts.Location = new System.Drawing.Point(249, 278);
+            this.btn_AllProducts.Name = "btn_AllProducts";
+            this.btn_AllProducts.Size = new System.Drawing.Size(141, 23);
+            this.btn_AllProducts.TabIndex = 35;
+            this.btn_AllProducts.Text = "Show All Product";
+            this.btn_AllProducts.UseVisualStyleBackColor = true;
+            
             // 
-            // UserForm
+            // ProductUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 553);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_AllProducts);
             this.Controls.Add(this.lbl_CategorySearch);
             this.Controls.Add(this.lbl_CategoryUpdate);
             this.Controls.Add(this.lbl_CategoryAdd);
@@ -368,7 +368,7 @@
             this.Controls.Add(this.lbl_AddCount);
             this.Controls.Add(this.lbl_AddPrice);
             this.Controls.Add(this.lbl_AddName);
-            this.Name = "UserForm";
+            this.Name = "ProductUserForm";
             this.Text = "UserForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UserProducts)).EndInit();
             this.ResumeLayout(false);
@@ -409,6 +409,6 @@
         private System.Windows.Forms.Label lbl_CategoryAdd;
         private System.Windows.Forms.Label lbl_CategoryUpdate;
         private System.Windows.Forms.Label lbl_CategorySearch;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_AllProducts;
     }
 }

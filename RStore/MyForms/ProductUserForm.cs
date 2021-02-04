@@ -13,14 +13,16 @@ using System.Windows.Forms;
 
 namespace RStore.MyForms
 {
-    public partial class UserForm : Form
+    public partial class ProductUserForm : Form
     {
         MyDatabase myDatabase = new MyDatabase();
-        public UserForm()
+        public ProductUserForm()
         {
             InitializeComponent();
-            
-            dgv_UserProducts.DataSource = GetAllUserProduct(myDatabase.userId);
+            GetAllUserProduct(myDatabase.userId);
+
+
+
             SetCategory();
         }
         CrudDb crud = new CrudDb();
@@ -31,7 +33,9 @@ namespace RStore.MyForms
                 Name = txb_AddName.Text,
                 Price = Convert.ToDouble(txb_AddPrice.Text),
                 CategoryId=Convert.ToInt32(cmb_CategoryAdd.Text.Split('-')[0]),
+                UserId=myDatabase.userId,
                 Count=Convert.ToInt32(txb_AddCount.Text),
+                BoughtCount=0,
                 Status="Active"
             };
             crud.AddProduct(product);
@@ -50,25 +54,17 @@ namespace RStore.MyForms
             }
         }
 
-        public List<Product> GetAllUserProduct(int id)
+        public void GetAllUserProduct(int id)
         {
             using(RStoreDataContext context=new RStoreDataContext())
             {
                 var userproducts = context.Products.Where(x => x.UserId == id).ToList();
-                return userproducts;
+                dgv_UserProducts.DataSource = userproducts;
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            dgv_UserProducts.DataSource = GetAllUserProduct(myDatabase.userId);
-        }
+       
 
-        private void dgv_UserProducts_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txb_NameUpdate.Text = dgv_UserProducts.CurrentRow.Cells[1].Value.ToString();
-           
-            
-        }
+        
     }
 }

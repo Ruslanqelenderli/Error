@@ -64,6 +64,10 @@
     <Compile Include="Migrations\202102031147144_initial.designer.cs">
       <DependentUpon>202102031147144_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102041027523_BoughtCount.cs" />
+    <Compile Include="Migrations\202102041027523_BoughtCount.designer.cs">
+      <DependentUpon>202102041027523_BoughtCount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Product.cs" />
@@ -73,6 +77,12 @@
     </Compile>
     <Compile Include="MyForms\AdminSelectForm.Designer.cs">
       <DependentUpon>AdminSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForms\AllProductsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForms\AllProductsForm.Designer.cs">
+      <DependentUpon>AllProductsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MyForms\LoginForm.cs">
       <SubType>Form</SubType>
@@ -98,19 +108,25 @@
     <Compile Include="MyForms\SelectForm.Designer.cs">
       <DependentUpon>SelectForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\UserForm.cs">
+    <Compile Include="MyForms\ProductUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\UserForm.Designer.cs">
-      <DependentUpon>UserForm.cs</DependentUpon>
+    <Compile Include="MyForms\ProductUserForm.Designer.cs">
+      <DependentUpon>ProductUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Migrations\202102031147144_initial.resx">
       <DependentUpon>202102031147144_initial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102041027523_BoughtCount.resx">
+      <DependentUpon>202102041027523_BoughtCount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyForms\AdminSelectForm.resx">
       <DependentUpon>AdminSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\AllProductsForm.resx">
+      <DependentUpon>AllProductsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyForms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -124,8 +140,8 @@
     <EmbeddedResource Include="MyForms\SelectForm.resx">
       <DependentUpon>SelectForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\UserForm.resx">
-      <DependentUpon>UserForm.cs</DependentUpon>
+    <EmbeddedResource Include="MyForms\ProductUserForm.resx">
+      <DependentUpon>ProductUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

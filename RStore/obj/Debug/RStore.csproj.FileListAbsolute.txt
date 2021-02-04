@@ -15,7 +15,9 @@ C:\Users\User\source\repos\RStore\RStore\bin\Debug\EntityFramework.xml
 C:\Users\User\source\repos\RStore\RStore\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\User\source\repos\RStore\RStore\obj\Debug\RStore.csproj.CopyComplete
 C:\Users\User\source\repos\RStore\RStore\obj\Debug\RStore.MyForms.SelectForm.resources
-C:\Users\User\source\repos\RStore\RStore\obj\Debug\RStore.MyForms.UserForm.resources
 C:\Users\User\source\repos\RStore\RStore\obj\Debug\RStore.Migrations.initial.resources
 C:\Users\User\source\repos\RStore\RStore\obj\Debug\RStore.MyForms.AdminSelectForm.resources
 C:\Users\User\source\repos\RStore\RStore\obj\Debug\RStore.MyForms.OperationsByCategoryForm.resources
+C:\Users\User\source\repos\RStore\RStore\obj\Debug\RStore.MyForms.AllProductsForm.resources
+C:\Users\User\source\repos\RStore\RStore\obj\Debug\RStore.MyForms.ProductUserForm.resources
+C:\Users\User\source\repos\RStore\RStore\obj\Debug\RStore.Migrations.BoughtCount.resources
